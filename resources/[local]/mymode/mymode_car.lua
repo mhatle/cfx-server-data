@@ -11,6 +11,8 @@ RegisterCommand('car', function(source, args)
         return
     end
 
+    logger('Player requested the vehicle ' .. vehicleName)
+
     -- load the model
     RequestModel(vehicleName)
 

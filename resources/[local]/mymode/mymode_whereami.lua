@@ -3,7 +3,6 @@ RegisterCommand('whereami', function(source, args)
 
     local playerCoords = GetEntityCoords(playerPed, true)
 
-    TriggerEvent('chat:addMessage', {
-        args = { 'Coords: ' .. playerCoords }
-    })
+    logger(playerCoords)
+
 end, false)

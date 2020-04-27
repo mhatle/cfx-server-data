@@ -13,11 +13,9 @@ RegisterCommand('weapon', function(source, args)
             args = { 'Weapon ' .. weaponName .. ' is invalid.' }
         })
         return
-    else
-        TriggerEvent('chat:addMessage', {
-            args = { 'Found ' ..weaponName .. ' hash ' .. weaponHash .. '.' .. type }
-        })
     end
+
+    logger('Player requested weapon ' .. weaponName)
 
     local playerPed = PlayerPedId() -- Get the payer ped
 

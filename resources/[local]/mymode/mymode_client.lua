@@ -15,6 +15,8 @@ AddEventHandler('onClientGameTypeStart', function()
         end)
     end)
 
+    logger('New player spaawned at ' .. spawnPos)
+
     exports.spawnmanager:setAutoSpawn(true)
     exports.spawnmanager:forceRespawn()
 end)
