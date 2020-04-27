@@ -8,6 +8,7 @@ version '1.0.0'
 resource_type 'gametype' { name = 'My awesome game type!' }
 
 client_scripts { 
+    'mymode_logger.lua',
     'mymode_whereami.lua',
     'mymode_weapon.lua',
     'mymode_car.lua',
