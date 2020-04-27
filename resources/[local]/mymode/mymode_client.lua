@@ -1,4 +1,5 @@
-local spawnPos = vector3(-275.522, 6635.835, 7.425)
+--Near PillBox
+local spawnPos = vector3(236.426, -603.497, 42.236)
 
 AddEventHandler('onClientGameTypeStart', function()
     exports.spawnmanager:setAutoSpawnCallback(function()
